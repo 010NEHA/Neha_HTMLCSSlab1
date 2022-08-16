@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+}
+
+.container {
+    background-color: #ddd;
+    height: 90%;
+}
+
+.graph {
+    display: flex;
+    column-gap: 20px;
+    margin: 20px;
+    height: 80%;
+}
+
+
+.bar {
+    height: 90%;
+    background-color: #f0f0f0;
+    margin-bottom: 30%;
+    position: relative;
+    
+}
+
+.bar::after {
+    content: '';
+    width: 90%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   background-color: black;
+}
+
+.percent-30::after {
+    height: 30%;
+   
+}
+
+.percent-40::after {
+    height: 40%;
+}
+
+.percent-80::after {
+    height: 80%;
+}
+
+.legend h2 {
+    text-align:center;
+    margin: 10px;
+}

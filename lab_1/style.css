@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+
+header h1{
+    background-color: rgb(128, 44, 18);
+    padding: 20px;
+    text-align:center;
+    width: 100%;
+}
+
+ navbar {
+    display: flex;
+    height: 35px;
+    background-color: #ccc;
+ }
+
+ .dropdown {
+    visibility: hidden;
+    width: 150px;
+    background-color: gray;
+ }
+a {
+    display: block;
+    padding: 8px 18px;
+    width: 150px;
+ }
+
+ a:hover {
+    background-color: black;
+    color: white;
+ }
+
+ .dropdown:hover,
+ .dropdown-box > a:hover + .dropdown {
+   visibility: visible;
+ }
+
+ 
